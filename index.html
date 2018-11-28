@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" type=text/css>
+    <link href="media_breaks.css" rel="stylesheet" type=text/css>
+
+    <title>ADVANCED CALCULATOR</title>
+
+</head>
+
+<body>
+
+
+    <div class="color_btns">
+        <button class="white"> WH/GR CALC</button>
+        <button class="black"> WH/BL CALC</button>
+    </div>
+
+
+    <div class="wrapper">
+
+        <div class="display">
+            &nbsp;
+        </div>
+
+        <div class="row fir_row clear" style="margin-top:15px"> 
+
+            <button type="submit" class="fact btn">x!</button>
+            <button type="submit" class="prime btn">prim</button>
+            <button value="x²" type="submit" class="pow btn" onclick="getOpVal(this.value)">x²</button>
+            <button value="x^" type="submit" class="sqrt btn" onclick="getOpVal(this.value)">x^</button>
+
+        </div>
+
+        <div class="row clear" style="margin-top:1px">
+
+            <button value="cos" type="submit" class="gens btn" onclick="getOpVal(this.value); gensy(this.value)">cos</button>
+            <button value="sin" type="submit" class="gens btn" onclick="getOpVal(this.value); gensy(this.value)">sin</button>
+            <button value="tan" type="submit" class="gens btn" onclick="getOpVal(this.value); gensy(this.value)">tan</button>
+            <button value="ctan" type="submit" class="gens btn" onclick="getOpVal(this.value); gensy(this.value)">ctan</button>
+
+        </div>
+
+        <div class="row clear" style="margin-top:20px">
+
+            <button value="1" type="submit" class="one btn" onclick="getNumVal(this.value)">1</button>
+            <button value="2" type="submit" class="two btn" onclick="getNumVal(this.value)">2</button>
+            <button value="3" type="submit" class="three btn" onclick="getNumVal(this.value)">3</button>
+            <button value="+" type="submit" class="plus btn" onclick="getOpVal(this.value)">+</button>
+
+        </div>
+
+        <div class="row clear">
+
+            <button value="4" type="submit" class="four btn" onclick="getNumVal(this.value)">4</button>
+            <button value="5" type="submit" class="five btn" onclick="getNumVal(this.value)">5</button>
+            <button value="6" type="submit" class="six btn" onclick="getNumVal(this.value)">6</button>
+            <button value="-" type="submit" class="minus btn" onclick="getOpVal(this.value)">-</button>
+
+        </div>
+
+        <div class="row clear">
+
+            <button value="7" type="submit" class="seven btn" onclick="getNumVal(this.value)">7</button>
+            <button value="8" type="submit" class="eight btn" onclick="getNumVal(this.value)">8</button>
+            <button value="9" type="submit" class="nine btn" onclick="getNumVal(this.value)">9</button>
+            <button value="*" type="submit" class="multi btn" onclick="getOpVal(this.value)">*</button>
+
+        </div>
+
+        <div class="row clear">
+
+            <button value="0" type="submit" class="zero btn" onclick="getNumVal(this.value)">0</button>
+            <button value="=" type="submit" class="equal btn" onclick="getOpVal(this.value)">=</button>
+            <button value="." type="submit" class="dot btn" onclick="getNumVal(this.value)">.</button>
+            <button value="/" type="submit" class="divide btn" onclick="getOpVal(this.value)">/</button>
+
+        </div>
+
+
+        <div class="row clear">
+
+            <button value=" - Fibonacci number" type="submit" class="fib btn" onclick="getOpVal(this.value)">fib</button>
+            <button type="submit" class="ac btn">AC</button>
+            <button type="submit" class="parente btn" onclick="getOpVal(this.value)">( )</button>
+            <button value="%" type="submit" class="perc btn" onclick="getOpVal(this.value)">%</button>
+
+        </div>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">History</button>
+
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="operations">
+
+                <div class="st">1) </div>
+                <div class="domath"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="calc.js"></script>
+
+</body>
+
+
+</html>

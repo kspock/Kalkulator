@@ -1,0 +1,59 @@
+@media(max-width: 415px){
+    .display{font-size: 16px; line-height: 1.7;}
+    .row{margin-bottom: 2px;}
+    .fir_row{margin-top: 30px !important;}
+    .hist{font-size: 15px; right: 10%;}
+    .wrapper{margin-top: 50px;}
+    .btn,
+    .btn_f{width: 43px; height: 43px;}
+    .credits{display: none;}
+    .his{display: none;}
+    .modal-content{font-size: 14px;}
+    #myBtn{ bottom : 84%;
+            background-color: rgba(169, 169, 169, 0);
+            color: snow;}
+}
+
+@media(min-width: 769px){
+    .display{
+        font-size: 26px;
+        line-height: 2.2;
+        width: 580px;
+        height: 65px;
+    }
+    .row{margin-bottom: 2px;}
+    .fir_row{margin-top: 30px !important;}
+    .hist{font-size: 15px; right: 10%;}
+
+    .wrapper{
+        margin-top: 50px;
+        width: 600px;
+        height: 400px;
+    }
+    .btn,
+    .btn_f{
+        width: 60px; height: 60px;
+        font-size: 26px;
+    }
+    .credits{display: none;}
+    .his{
+        display: none;
+    }
+    #myBtn{
+        position: absolute;
+        left:50%;
+        bottom: 60%;
+        border:none;
+        background-color: snow;
+        border: 2px solid gray;
+        color: black;
+        letter-spacing: 1px;
+        cursor: pointer;
+        width: 80px; height: 50px;
+        font-size: 20px;
+        border-radius: 20%;
+    }
+    #myBtn:hover{
+        color:snow;
+    }
+}
